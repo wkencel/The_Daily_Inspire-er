@@ -1,7 +1,7 @@
-alert('code time')
+alert('this is on')
 
-// chrome.runtime.onInstalled.addListener(function() {
-//     chrome.storage.sync.set({color: '#3aa757'}, function() {
-//       console.log("The color is green.");
-//     });
-//   });
+function changeBackground(newImage) {
+    let background = document.getElementById('background')
+    background.style.color = newImage;
+}
+console.log('connected to js')

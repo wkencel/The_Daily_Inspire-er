@@ -5,19 +5,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>This is our html rendering</title>
+        <audio
+        controls autoplay
+        src="/All-4-One - I Swear.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <button onclick="changeBackground('green')">click here</button>
         <h1>This is connected</h1>
         <div id="root">
-            <p>element should be above</p>
+            <p id='background'>element should be above</p>
+            <img src="https://codesmith.io/81ff5ac1c752947addbb16c2c7c84381.jpg">
         </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="app.jsx" ></script>
+        <script src="alert.js" ></script>
     </body>
 </html>>
