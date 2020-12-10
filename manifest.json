@@ -1,12 +1,17 @@
 { "name" : "quoteGenerator",
   "version": "1.0",
   "manifest_version": 2,
+  "background":{
+      "scripts": ["app.jsx"],
+      "persistent": false
+      },
   "chrome_url_overrides": {
       "newtab": "index.html"
     },
   "content_scripts":[
       {
             "matches":["<all_urls>"],
-            "js":["alert.js"]
+            "js":["app.jsx"]
       }
+      
   ]}
