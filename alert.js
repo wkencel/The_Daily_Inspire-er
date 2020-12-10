@@ -25,28 +25,27 @@ audio.volume = 0.1
 
 const mikeFace = ["mike_headshot.png", "kitties.jpg"];
 const images = [ 
-  '/images/mnt_zion.jpg', 
+  '/snowflake.jpg', 
  "/images/Acadia.jpg",
  "/images/hang-in-there-kitty.jpg",
  "/images/sunset_beach.jpg",
  "/images/RegisAndRamses.png",
- "/images/Lex_background.png"
+ "/images/Lex_background.png",
+ '/images/mnt_zion.jpg'
 ];
 const messages = ['You are not a unique snowflake.',
- "the request is the grocery list, and the response object is the shopping cart.", 
+"the request is the grocery list, and the response object is the shopping cart.",
  //inspiration quotes
  'Hang in There',
  'The sands of the beach must change with each new wind.',
  "Regis for President \n 2024",
  "can you please go to one of your cohort mates instead of me with your questions?",
- 'You are amazing',
  'The most important races are won in the ocean of the soul.',
- 
  'The village of a chief who won’t forget the past may as well forget about the future.',
  'Sometimes a little bit of nothing means a whole lot of something.'
 ];
-let i = 0;
-//let i = Math.floor(Math.random() * 10;
+// let i = 0;
+let i = 0
 const body = document.getElementById('doc');
 const face = document.getElementById('mike_face');
 const button = document.getElementById("button");
@@ -56,8 +55,8 @@ button.addEventListener("click", (event)=>{
 // console.log(images[i], i)
    body.setAttribute("style", `background-image: url('${images[i]}')`);
    message.innerText = messages[i];
-   face.setAttribute("img", `src: url('${mike_face[i]}')`);
-   i++;
+   // face.getElementById("mike_face".src=`${mike_face[i]}`);
+   i = Math.floor(Math.random() * messages.length);
 });
 
 // body.setAttribute("style", "background-image: url('mnt_zion.jpg')");
