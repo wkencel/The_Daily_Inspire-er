@@ -23,26 +23,27 @@
 var audio = document.getElementById("my_audio");
 audio.volume = 0.1
 
-const mikeFace = ["mike_headshot.png", "kitties.jpg"];
+const mikeFace = ["mike_headshot.png", "mike_king.jpg", '../mikePhotos/mike_black_background.jpeg', '../mikePhotos/mike_suit_2.png', '../mikePhotos/mike_suit_1.png', '../mikePhotos/Lex_side.png', '../mikePhotos/mike_black_background.jpeg', '../mikePhotos/mike_in_action.png'];
 const images = [ 
-  '/snowflake.jpg', 
+   '/images/mnt_zion.jpg',
  "/images/Acadia.jpg",
  "/images/hang-in-there-kitty.jpg",
  "/images/sunset_beach.jpg",
  "/images/RegisAndRamses.png",
  "/images/Lex_background.png",
- '/images/mnt_zion.jpg'
+ '/images/mnt_zion.jpg',
+ '/images/nonsense_chart1.jpg'
 ];
-const messages = ['You are not a unique snowflake.',
-"the request is the grocery list, and the response object is the shopping cart.",
+const messages = ['You are not a unique and beautiful snowflake',
+'The village of a chief who won’t forget the past may as well forget about the future',
  //inspiration quotes
  'Hang in There',
- 'The sands of the beach must change with each new wind.',
+ 'The sands of the beach must change with each new wind',
  "Regis for President \n 2024",
- "can you please go to one of your cohort mates instead of me with your questions?",
- 'The most important races are won in the ocean of the soul.',
- 'The village of a chief who won’t forget the past may as well forget about the future.',
- 'Sometimes a little bit of nothing means a whole lot of something.'
+ "Can you please go to one of your cohortmates instead of me with your questions?",
+ 'The most important races are won in the ocean of the soul',
+ "the request is the grocery list, and the response object is the shopping cart",
+'Sometimes a little bit of nothing means a whole lot of something'
 ];
 // let i = 0;
 let i = 0
@@ -55,7 +56,8 @@ button.addEventListener("click", (event)=>{
 // console.log(images[i], i)
    body.setAttribute("style", `background-image: url('${images[i]}')`);
    message.innerText = messages[i];
-   // face.getElementById("mike_face".src=`${mike_face[i]}`);
+   // console.log('mikes face?',`${mikeFace[1]}`)
+   face.setAttribute("src", `${mikeFace[i]}`);
    i = Math.floor(Math.random() * messages.length);
 });
 
