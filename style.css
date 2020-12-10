@@ -1,0 +1,29 @@
+html { 
+    background: url(kitties.jpg); 
+    background-size: cover;
+  }
+
+#text{
+    background-color: white;
+
+}
+
+h1{
+    box-sizing: content-box;
+border-radius: 10px;
+border: 10px solid transparent;
+border-image-source: url("color-gradient-2.jpeg") 17px;
+padding: 5px;
+    font-family: Garamond, serif;
+    background-color:whitesmoke
+    font-size: 24px;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  }
+
+
+#mike_face {
+    border-radius: 50%;
+    max-width: 275px;
+  }
