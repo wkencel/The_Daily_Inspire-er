@@ -7,15 +7,14 @@ html {
 
 h1{
     box-sizing: content-box;
-border-radius: 10px;
-border: 10px solid transparent;
-border-image-source: url("color-gradient-2.jpeg") 17px;
-padding: 5px;
+  border-radius: 10px;
+  border: 10px solid transparent;
+  padding: 5px;
     font-family: Garamond, serif;
     background-color:whitesmoke
     font-size: 24px;
     margin: auto;
-    width: 70%;
+    width: 60%;
     text-align: center;
   }
 
@@ -30,4 +29,5 @@ padding: 5px;
 #mike_face {
     border-radius: 50%;
     max-width: 275px;
+    border: 10px solid white;
   }
