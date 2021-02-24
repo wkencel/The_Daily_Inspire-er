@@ -4,8 +4,4 @@ Receive an inspiring quote as the landing page of your browser to keep you motiv
 ## Description
 
 The Daily Inspirer is a motivating resource to keep your glass half full throughout your day
-<br>
 
-## License
-
-#MIT
