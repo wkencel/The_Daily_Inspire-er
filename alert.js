@@ -1,26 +1,4 @@
-
-
-// function changeBackground(newImage) {
-//     let background = document.getElementById('background');
-//     background.style.color = newImage;
-// }
-
-
-// document.querySelector('button').addEventListener('click',
-//     onclick,false)
-    
-//     function onclick () {
-//         let background = document.getElementById('background');
-//         background.style.color = newImage;
-//         alert('clicked')
-
-//     }, false)
-
-// $('.button').click(function(){
-//     $(this).toggleClass('clicked');
-//   });
-
-let audio = document.getElementById("my_audio");
+const audio = document.getElementById("my_audio");
 audio.volume = 0.04
 
 const mikeFace = [
@@ -73,15 +51,8 @@ const face = document.getElementById('mike_face');
 const button = document.getElementById("button");
 const message = document.querySelector('h1');
 button.addEventListener("click", (event)=>{
-//    alert('clicked!');
-// console.log(images[i], i)
    body.setAttribute("style", `background-image: url('${images[i]}')`);
    message.innerText = messages[i];
-   // console.log('mikes face?',`${mikeFace[1]}`)
    face.setAttribute("src", `${mikeFace[i]}`);
    i = Math.floor(Math.random() * messages.length);
 });
-
-// body.setAttribute("style", "background-image: url('mnt_zion.jpg')");
-
-// .setAttribute("style", "background-image: url(" + dir + images[randomCount] + ");background-repeat: no-repeat;background-size: 388px 388px");
