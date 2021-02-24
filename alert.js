@@ -20,8 +20,8 @@
 //     $(this).toggleClass('clicked');
 //   });
 
-var audio = document.getElementById("my_audio");
-audio.volume = 0.12
+let audio = document.getElementById("my_audio");
+audio.volume = 0.04
 
 const mikeFace = [
 "./mike_headshot.png", 
@@ -65,7 +65,7 @@ const messages = [
 '“fear is the mind killer” \n -Bene Gesserit \n -Litany of Fear',
 '"I\'m not the imposter" \n *asks someone else what task they were doing and blames them*'
 ];
-
+console.log('test')
 let i = 0;
 
 const body = document.getElementById('doc');
