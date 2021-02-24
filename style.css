@@ -3,6 +3,15 @@ html {
     background-size: cover;
   }
 
+#button {
+  display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+  background-color: #a2f3f7;
+  margin:0 0.3em 0.3em 0;
+ border-radius:0.22em;
+ box-sizing: border-box;
+    }
 
 
 h1{
